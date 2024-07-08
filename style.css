@@ -10,6 +10,7 @@ body {
 .container {
   max-width: 1300px;
   margin: 0 auto;
+  font-family: "Wittgenstein";
 }
 
 header {
@@ -22,7 +23,6 @@ header {
     url(boston-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Wittgenstein";
   color: var(--text-colour);
 }
 
@@ -56,6 +56,14 @@ footer ul {
   padding: 0px;
 }
 
+footer a {
+  color: antiquewhite;
+}
+
+.grid {
+  display: grid;
+}
+
 .grid-3-col-start-narrow {
   grid-template-columns: 1fr 2fr 2fr;
   text-align: start;
@@ -63,12 +71,73 @@ footer ul {
   padding: 0px 30px;
 }
 
-footer a {
-  color: antiquewhite;
+.grid-2-col {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
 }
 
-.grid {
-  display: grid;
+main {
+  background-color: #d8bdaf;
+}
+
+main .why-massachusetts {
+  padding: 30px 40px;
+  line-height: 2.9;
+}
+
+main .why-text {
+  padding: 20px 35px;
+  margin-left: 30px;
+}
+
+main .why-text p {
+  font-size: 16px;
+}
+
+main h3 {
+  font-size: 25px;
+  margin: 0;
+}
+
+main .why-img {
+  width: 480px;
+}
+
+.img-fluid {
+  max-width: 100%;
+}
+
+@media (max-width: 1300px) {
+  main h3 {
+    font-size: 23px;
+  }
+
+  main .why-text p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1222px) {
+  main h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1184px) {
+  main h3 {
+    font-size: 18px;
+  }
+
+  main .why-text {
+    padding: 0px;
+    line-height: 3;
+  }
+}
+
+@media (max-width: 1020px) {
+  .grid-2-col {
+    grid-gap: 25px;
+  }
 }
 
 @media (max-width: 960px) {
@@ -94,5 +163,10 @@ footer a {
 
   footer {
     line-height: 1.5;
+  }
+
+  .img-fluid {
+    display: block;
+    margin: 0 auto;
   }
 }

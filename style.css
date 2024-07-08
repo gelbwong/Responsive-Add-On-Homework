@@ -7,10 +7,16 @@ body {
   background-color: #6b524e;
 }
 
+.img-fluid {
+  max-width: 100%;
+  display: block;
+}
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
-  font-family: "Wittgenstein";
+  font-family: "Wittgenstein", serif;
+  color: var(--text-colour);
 }
 
 header {
@@ -20,7 +26,7 @@ header {
       rgba(255, 255, 255, 0.5),
       rgba(0, 0, 0, 0.4)
     ),
-    url(boston-header.jpg);
+    url(./images/boston-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--text-colour);
@@ -45,7 +51,7 @@ footer {
   color: antiquewhite;
   padding: 30px 0px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-    url(./boston-gathering.png);
+    url(./images/boston-gathering.png);
   background-repeat: no-repeat;
   background-size: cover;
   line-height: 2;
@@ -60,6 +66,10 @@ footer a {
   color: antiquewhite;
 }
 
+.no-break-grid {
+  display: grid;
+}
+
 .grid {
   display: grid;
 }
@@ -69,6 +79,10 @@ footer a {
   text-align: start;
   grid-gap: 30px;
   padding: 0px 30px;
+}
+
+.grid-3-col {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid-2-col {
@@ -103,8 +117,34 @@ main .why-img {
   width: 480px;
 }
 
-.img-fluid {
-  max-width: 100%;
+main .secondary {
+  background-color: var(--text-colour);
+  color: #d8bdaf;
+  padding-top: 50px;
+}
+/*#29221c*/
+main .secondary h3 {
+  text-align: center;
+}
+
+main .card {
+  background-color: #29221c;
+  margin: 20px;
+  padding: 30px;
+}
+
+main .card-footer {
+}
+
+.card .footer-btn {
+  text-align: center;
+  background-color: #d8bdaf;
+  font-family: "Wittgenstein", serif;
+  font-size: 16px;
+  color: #29221c;
+  text-decoration: none;
+  display: block;
+  padding: 15px 5px;
 }
 
 @media (max-width: 1300px) {

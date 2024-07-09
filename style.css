@@ -218,6 +218,12 @@ main .photo-gallery {
   color: #d8bdaf;
 }
 
+@media (max-width: 1150px) {
+  .photo-gallery .grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
 @media (max-width: 1300px) {
   main h3 {
     font-size: 23px;
@@ -290,10 +296,6 @@ main .photo-gallery {
     margin: 0 auto;
   }
 
-  .photo-gallery .grid {
-    grid-template-columns: 1fr 1fr !important;
-  }
-
   .photo-acknowledgements .grid {
     grid-gap: 0px;
   }
@@ -302,5 +304,15 @@ main .photo-gallery {
 @media (max-width: 800px) {
   .photo-gallery .grid {
     grid-template-columns: 1fr !important;
+  }
+  .photo-gallery {
+    padding: 5px !important;
+  }
+
+  .photo-acknowledgements {
+    padding: 30px 25px;
+  }
+  .photo-acknowledgements h1 {
+    font-size: 25px !important;
   }
 }

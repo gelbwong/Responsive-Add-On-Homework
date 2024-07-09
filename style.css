@@ -164,6 +164,26 @@ main .card {
   padding: 15px 5px;
 }
 
+.image-reference {
+  padding: 10px;
+  background-color: #d8bdafbd;
+  max-width: 25px;
+  position: relative;
+  float: right;
+}
+
+header .image-reference {
+  top: 220px;
+}
+
+footer .image-reference {
+  bottom: 20px;
+}
+
+.image-reference-number {
+  font-family: "Courier New", Courier, monospace;
+}
+
 @media (max-width: 1300px) {
   main h3 {
     font-size: 23px;
@@ -172,6 +192,16 @@ main .card {
   main .why-text p {
     font-size: 14px;
   }
+}
+
+.photo-acknowledgements {
+  padding: 50px 100px;
+  margin: 0 auto;
+  background-color: #1e1e1e;
+  color: #d8bdaf;
+}
+.photo-acknowledgements a {
+  color: #d8bdaf;
 }
 
 @media (max-width: 1222px) {
@@ -225,5 +255,9 @@ main .card {
   .img-fluid {
     display: block;
     margin: 0 auto;
+  }
+
+  .photo-acknowledgements .grid {
+    grid-gap: 0px;
   }
 }

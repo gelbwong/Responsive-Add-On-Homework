@@ -122,18 +122,35 @@ main .secondary {
   color: #d8bdaf;
   padding-top: 50px;
 }
-/*#29221c*/
+
 main .secondary h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 5px;
+}
+
+main .secondary h4 {
+  font-size: 20px;
+}
+
+main .card-body {
+  padding: 30px;
+}
+
+main .card-header {
   text-align: center;
+}
+
+.card-header h4 {
+  margin-bottom: 0px;
 }
 
 main .card {
   background-color: #29221c;
   margin: 20px;
-  padding: 30px;
-}
-
-main .card-footer {
+  padding: 35px;
+  line-height: 2;
 }
 
 .card .footer-btn {

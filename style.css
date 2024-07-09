@@ -68,6 +68,7 @@ footer a {
 
 .no-break-grid {
   display: grid;
+  grid-gap: 0px !important;
 }
 
 .grid {
@@ -184,14 +185,27 @@ footer .image-reference {
   font-family: "Courier New", Courier, monospace;
 }
 
-@media (max-width: 1300px) {
-  main h3 {
-    font-size: 23px;
-  }
+.embed {
+  aspect-ratio: 1/1;
+  width: 100%;
+}
 
-  main .why-text p {
-    font-size: 14px;
-  }
+main .photo-gallery {
+  background-color: #29221c;
+  color: #d8bdaf;
+  text-align: center;
+  padding: 50px;
+  line-height: 3;
+}
+
+.photo-gallery h3 {
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 10px;
+}
+
+.photo-gallery .grid {
+  grid-gap: 50px;
 }
 
 .photo-acknowledgements {
@@ -202,6 +216,16 @@ footer .image-reference {
 }
 .photo-acknowledgements a {
   color: #d8bdaf;
+}
+
+@media (max-width: 1300px) {
+  main h3 {
+    font-size: 23px;
+  }
+
+  main .why-text p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 1222px) {
@@ -240,6 +264,10 @@ footer .image-reference {
     width: 300px;
   }
 
+  main .image-reference-number {
+    text-align: center;
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }
@@ -257,7 +285,22 @@ footer .image-reference {
     margin: 0 auto;
   }
 
+  .photo-gallery .instagram-post {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .photo-gallery .grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
   .photo-acknowledgements .grid {
     grid-gap: 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  .photo-gallery .grid {
+    grid-template-columns: 1fr !important;
   }
 }

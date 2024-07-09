@@ -214,8 +214,15 @@ main .photo-gallery {
   background-color: #1e1e1e;
   color: #d8bdaf;
 }
-.photo-acknowledgements a {
+.photo-acknowledgements a,
+.photo-acknowledgements a:visited,
+header .image-reference a,
+.secondary .image-reference-number a {
   color: #d8bdaf;
+}
+
+main .image-reference-number a {
+  color: var(--text-colour);
 }
 
 @media (max-width: 1150px) {
